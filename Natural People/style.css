@@ -1,0 +1,65 @@
+body{
+  background-color: #1f1f1f;
+  align-items: center;
+  color: beige;
+  cursor: url('logo.svg'), auto;
+}
+
+#mainflexx{
+  display: flex;
+}
+
+#mainflex div{
+  flex: 200px;
+}
+
+#logo{
+  width: 180px;
+  padding: 40px 40px 40px 40px;
+}
+
+#flexs {
+  display: flex;
+  flex-direction: vertical;
+  width: 800px;
+
+}
+
+.column div img{
+  width: 90%;
+  /* padding: 60px 60px 60px 60px; */
+}
+
+.column div{
+  /* width: 90%; */
+  padding: 25px 25px 25px 25px;
+}
+/* img{
+  width: 90%;
+  padding-bottom: 20px;
+  height: 100%;   */
+
+#menu{
+  text-align: right;
+  text-decoration: white;
+  size: 30px;
+  /* right: 55px; */
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}

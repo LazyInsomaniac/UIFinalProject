@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    height: 100vh;
+    cursor: url('logo.svg'), auto;
+    background-color: #1F1F1F;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-areas: 
+            "header header header"
+            "left content right"
+            "footer footer footer";
+            grid-template-rows: 60px 1fr 150px;
+            grid-template-columns: 20% 1fr 15%;
+}
+
+header{
+    grid-area: header;
+    width: 100%
+    /* padding: 55px 55px 55px 55px; */
+}
+
+#left{
+    grid-area: left;
+} 
+
+#cont{
+    grid-area: content;
+}
+
+#right{
+    grid-area: right;
+}
+
+footer{
+    grid-area: footer;
+}
+
+#menu{   
+    padding: 0 55px 55px 65px;
+    position: fixed;
+}
+
+.header{
+    position: fixed;
+    padding: 55px 55px 55px 55px;
+}
+
+.spf{
+    padding: 0 0px 50px 100px;
+}
+
+#sqst{
+    padding: 50px 0 50px 100px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.signupSection {
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 600px;
+  text-align: center;
+  display: flex;
+  color: white;
+}
+.info {
+  width: 45%;
+  background: rgba(20, 20, 20, .8);
+  padding: 30px 0;
+  border-right: 5px solid rgba(30, 30, 30, .8);
+}
+.info h2 {
+  padding-top: 30px;
+  font-weight: 300;
+}
+.info p {
+  font-size: 18px;
+}
+.info .icon {
+  font-size: 8em;
+  padding: 20px 0;
+  color: rgb(0,0,0);
+}
+.signupForm {
+  width: 70%;
+  padding: 30px 0;
+  background:#1f1f1f;
+  transition: 0.2s;
+}
+.signupForm h2 {
+  font-weight: 300;
+}
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 90%;
+  border: 1px solid rgb(247, 241, 241);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(75, 70, 70, 0.2);
+  color: white;
+  outline: none;
+
+}
+.noBullet {
+  list-style-type: none;
+  padding: 0;
+}
+#join-btn {
+  border: 1px solid rgb(0,0,0);
+  background: rgb(0,0,0);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#join-btn:hover {
+  background:rgb(0,0,0);
+  padding: 10px 80px;
+}
+
